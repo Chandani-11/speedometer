@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Speedometer HTML5 Canvas</title>
+    <script src="speedometer.js"></script>
+    <style type="text/css">
+      form{
+        margin-left: 15%;
+      }
+      .container{
+        margin-left: 16%;
+        margin-top: 10%;
+        padding-left: 15%;
+        border-color: rgb(100,50,100);
+        border-style: solid;
+        border-width: 5px;
+        width: 50%;
+      }
+      h1{
+        text-align: center;
+        color: rgb(100,50,100);
+        font-family: cursive;
+      }
+    </style>
+</head>
+<body onload='draw(0);'>
+  <h1>SPEEDOMETER</h1>
+  <div class="container">
+     <div class="row">
+     <div class="offset-sm-4 col-sm-8">
+
+       <canvas id="speedometer" width="440" height="220">Canvas not available.</canvas>
+       <div>
+        <form id="drawTemp">
+            <input type="text" id="txtSpeed" name="txtSpeed" value="20" placeholder=" Speed" maxlength="2"/>
+            <input type="button" value="Draw" onclick="drawWithInputValue();">
+        </form>
+      </div>  
+    
+     </div>
+   </div>
+  </div>
+</body>
+</html>
